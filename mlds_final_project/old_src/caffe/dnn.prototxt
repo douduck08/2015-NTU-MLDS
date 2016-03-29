@@ -1,0 +1,27 @@
+name: "MLDS-DNN"
+layer {
+  name: "input"
+  type: "HDF5Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TRAIN
+  }
+  data_param {
+    file_name: "TODO"
+    batch_size: 64
+  }
+}
+layer {
+  name: "input"
+  type: "Data"
+  top: "data"
+  top: "label"
+  include {
+    phase: TEST
+  }
+  data_param {
+    source: "TODO"
+    batch_size: 100
+  }
+}

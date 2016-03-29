@@ -1,0 +1,14 @@
+data/*
+model/*
+result/*
+fbank_valid/*
+prob/*
+test.*
+*.pyc
+*.swp
+*.map
+*.model
+*.csv
+*.log
+*.pkl
+
